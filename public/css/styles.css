@@ -1,0 +1,488 @@
+@charset "UTF-8";
+/*p=25*/
+/*p2=18*/
+/*340x420*/
+
+/* font-family: 'Fira Sans', sans-serif; */ 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --font: 'Fira Sans', sans-serif;
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*--cores--*/
+    --cor1:#FFFFFF;
+    --cor2:#0066CC;
+    --cor3:#009FB0;
+    --cor4:#FF9900;
+    --cor5:#545067;   
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+div.container{
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+
+a:focus{
+    text-decoration: none;
+}
+
+
+.btn-app{
+    padding: 12px 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    border: none;  
+}
+
+.btn-app:hover{
+    opacity: 0.8;
+    color: white;
+}
+
+
+#btn-guia{
+    margin-left: 50px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    background-color: #08909f;
+    overflow-x: hidden;
+}
+
+/* Estilo de navegação*/
+
+header{
+    width: 100%;
+    position:-webkit-sticky;
+    position: sticky;  
+    top: 0px;
+    background-color: white;
+    box-shadow: 2px 5px 10px 5px rgb(0 0 0 / 15%);
+}
+
+#container-menu{
+    top: 0px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+nav{
+    position: relative;
+    margin: 0px auto;
+    width: 825px;/*825*/
+    height: 50px;
+    background-color: none;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+nav > a{
+    padding-left: 50px; /*50*/
+    font-size: 17px;
+    font-weight: var(--font-light);
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.nav-item{
+    color: #08909f
+}
+
+nav .animation{
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    background-color: #08909f;
+    width: 100px;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+a:nth-child(1){
+    width: 100px;
+}
+
+a:nth-child(2){
+    width: 140px;
+}
+
+a:nth-child(3){
+    width: 100px;
+}
+
+
+a:nth-child(4){
+    width: 160px;
+}
+
+    /*Animação em hover*/
+    nav .start-inicio,a:nth-child(1):hover~.animation{
+        width: 140px;
+        left: 0;
+    }
+
+    nav .start-trabalhos,a:nth-child(2):hover~.animation{
+        width: 241px;
+        left: 89px;
+    }
+
+    nav .start-conheca,a:nth-child(3):hover~.animation{
+        width: 232px;
+        left: 278px;
+    }
+
+    nav .start-fale,a:nth-child(4):hover~.animation{
+        width: 200px;
+        left: 459px;
+    }
+
+    /*Animação em focus*/
+    nav .start-inicio,a:nth-child(1):focus~.animation{
+        width: 140px;
+        left: 0;
+    }
+
+    nav .start-trabalhos,a:nth-child(2):focus~.animation{
+        width: 241px;
+        left: 89px;
+    }
+
+    nav .start-conheca,a:nth-child(3):focus~.animation{
+        width: 232px;
+        left: 278px;
+    }
+
+    nav .start-fale,a:nth-child(4):focus~.animation{
+        width: 200px;
+        left: 459px;
+    }
+
+
+/*Estilo dos DIV's*/
+
+#sessoes{
+    display: grid;
+    margin: 0;
+    width: 100vw;
+}
+
+/*Configurando página incial*/
+.titulos{
+    font-weight: bold;
+    font-size: 35px;
+    
+}
+.traco1{
+    border: none;
+    background-color: var(--cor1);
+    width: 60px;
+    height: 6px;
+    margin-bottom: 0px;
+}
+.traco2{
+    margin-left: 0px;
+    border: none;
+    background-color: var(--cor2);
+    width: 60px;
+    height: 6px;
+    margin-bottom: 0px;
+}
+.traco3{
+    margin-left: 0px;
+    border: none;
+    background-color: var(--cor2);
+    width: 60px;
+    height: 6px;
+    margin-bottom: 0px;
+
+}
+
+.tipo-trabalho{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#inicio{
+    height: 88vh;
+    color: white;
+    background-color: #08909f;
+    display: flex;
+    justify-content: space-between;
+}
+
+#inicio-conteudo{
+    margin-top: 15vh;
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+#inicio-conteudobox{
+    width: 380px;
+}
+
+#inicio-conteudo p{
+    font-size: 20px;
+    font-weight: var(--font-normal);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+#acesse-guia{
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #f7961e;
+    
+}
+
+/*Nossos trabalhos e seus botões*/
+
+#trabalhos{
+    height: 105vh;
+    background-color: white;
+    color: var(--cor2); 
+}
+
+#trabalhos h1{
+    padding-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+#trabalhos->h1{
+    margin-left: 0;
+}
+
+#trabalhos-conteudo{ 
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 860px;
+}
+
+#trabalhos-cards{
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 860px;
+    display: flex;
+    text-align: center;
+}
+
+#trabalhos-conteudo p{
+    font-size: 18px;
+    font-weight: var(--font-normal);
+    text-align: left;
+}
+
+#nossos-trabalhos>img{
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    
+}
+
+#nossos-trabalhos> aside{
+    margin: auto;
+    padding: 20px;
+}
+
+#bloco1{
+    width: 340px;
+    height: 420px;
+    color: #1f62af;
+    padding: 20px;
+    background-color: #e3f1ff;
+    border-radius: 20px;
+}
+
+#bloco2{
+    width: 340px;
+    height: 420px;
+    margin-left: 30px;
+    padding: 20px;
+    color: #027a89;
+    background-color: #e5fcff;
+    border-radius: 20px;
+}
+
+#bloco3{
+    width: 340px;
+    height: 420px;
+    margin-left: 30px;
+    padding: 20px;
+    color: #cf7b29;
+    background-color: #fff5e5;
+    border-radius: 20px;
+}
+
+/*Parte do conheça a célula*/
+
+#conheca{
+    height: 100vh;
+    background-color: #fef7e8 ; 
+    
+}
+
+.tituloConheca{
+    color: var(--cor2);
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+#conheca-conteudo{
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 860px;
+}
+
+
+
+.container-celulatexto{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: -5px;
+}
+
+.container-celulatexto p{
+    width: 450px;
+    margin-top: 97px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: var(--font-normal);   
+}
+
+#conheca-conteudo > h1{
+    color: #2062af;
+}
+
+#btn-historia{
+    background-color: var(--cor4);
+    font-size: 18px;
+    padding: 15px 25px;
+    margin-top: 60px;  
+}
+
+/*Configurando o fale conosco*/
+#faleconosco{
+    height: 88vh;
+    background-color: white;
+    display: flex;
+    align-items: center; 
+}
+
+#faleconosco-box{ 
+    margin-left: auto;
+    margin-right: auto;
+    width: 860px;
+    
+}
+
+#faleconosco-conteudo{
+    display: flex;
+    align-items: center; 
+}
+#faleconosco-conteudo h1{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#faleconosco-conteudo p{
+    color: var(--cor2);
+    font-size: 18px;
+}
+
+#formulario-contato{
+    position: relative;
+    left: 5%;
+    top: 29%;
+    margin-left: 50px;
+    padding: 20px;
+    width: 400px;
+    margin-left: 140px;
+    background-color: #F2F6FA;
+    border-radius: 20px;
+    text-align: center;  
+}
+#formulario-contato form{
+    width: 100%;
+    padding: -1px 50px;
+    box-sizing: border-box;
+}
+
+#formulario-contato input{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    
+}
+#formulario-contato textarea{
+    position: relative;
+    width: 100%;
+    padding: 0 5px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    
+}
+.txtField{
+    padding: 2px;
+}
+.txtField form{
+    width: 100%;
+    position: relative;
+    margin: 30px;
+}
+fieldset{
+    border: none;
+    width: 320px;
+}
+
+#formulario-contato>#formulario-msg{
+    height: 200px;
+}
+
+/*Configurando botões na página do guia*/
+#buttons-guia{
+    padding-top: 20px;
+}

@@ -1,0 +1,21 @@
+<%- contentFor('body') %>
+
+<% let cont=0; %>
+
+<% do {%>
+<form action="" id="questao">
+    <% for(let index; index<=questoes1.options.length;index++){%>
+        <p id="enunciado"><=%questoes1.title%></p>
+        <input type="radio" name="itens" id="item <=%index%>" value="<=%questoes1.options[index]%>">
+    <% }%>
+        <input type="button" name="incrementa" id="incrementa" value=""> 
+</form>
+<% }while(cont<=questoes1.length)%>
+
+<script type="text/javascript">
+    let inc=getElementById("click",("incrementa"));
+    inc.addEventListener((e)=>{
+        cont++;
+    e.preventDefault(); 
+    });
+</script>
