@@ -27,39 +27,9 @@ app.listen(port, () => {
         res.render('pages/home')
     })
 
-    //get /about
-    /*app.get('/guia', (req, res) => {
-        var users = [{
-            id:'1',
-            name: faker.name.findName(),
-            email: faker.internet.email(),
-            avatar: 'http://placebear.com/300/300'
-        }, {
-            id: '2',
-            name: faker.name.findName(),
-            email: faker.internet.email(),
-            avatar: 'http://placebear.com/400/300'
-        }, {
-            id: '3',
-            name: faker.name.findName(),
-            email: faker.internet.email(),
-            avatar: 'http://placebear.com/500/300'
-        }]
-
-        res.render('pages/guia', {
-            //usuarios vai receber o vetor user
-            usuarios: users
-        })
-    })*/
-
-    //get / contact
-    app.get('/contact', (req, res) => {
-        res.render('pages/contact')
-      })
-
     //post /contact
-    app.post('/', (req, res) => {
-        res.send('Obrigado por entrar em contato conosco, ' + req.body.name + '! Responderemos em breve!')
+    app.post('/enviaremail', (req, res) => {
+        res.send('Obrigado por entrar em contato conosco, ' + req.body.formNome + '! Responderemos em breve!')
     })
 
     app.get('/guia', (req, res) => {
@@ -110,6 +80,7 @@ app.listen(port, () => {
     });
 
     app.get('/guiateste', (req, res) => {
+        
         var questions1 = [{
             id_q:1,
             title:"Quem descobriu o Brasil?",
@@ -144,6 +115,23 @@ app.listen(port, () => {
                 title:"Todas as alternativas",
                 value:"p4"}
                 ]
+        }, {
+            id_q:3,
+            title:"Pergunta qualquer?",
+            options:[
+                {
+                title:"Pergunta",
+                value:"p1"},
+                {
+                title:"Qualquer",
+                value:"p2"},
+                {
+                title:"Para",
+                value:"p3"},
+                {
+                title:"Teste",
+                value:"p4"}
+                ]
         }];
 
         /*suaLista.add(questions1);
@@ -160,3 +148,6 @@ app.listen(port, () => {
 
         
     });
+
+
+    

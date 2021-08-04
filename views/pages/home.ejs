@@ -1,4 +1,5 @@
 <%- contentFor('body') %>
+
 <div id="sessoes">
     <div id="inicio">
         <div id="inicio-conteudo">
@@ -87,25 +88,23 @@
                     <p>ticiane.monitoria@gmail.com</p>
                 </div>
                 <div id="formulario-contato">
-            
                         <div id="caixaContato">
-                            <form action="/contact" method="POST">
+                            <form action="/enviaremail" method="POST">
                             <div class="txtField">
-                                <input type="text" placeholder=" Nome" ><br>
+                                <input type="text" name="formNome" id="formNome" placeholder=" Nome" ><br>
                             </div>
                             <div class="txtField">
-                                <input type="email" name="" id="" placeholder=" E-mail"><br>
+                                <input type="email" name="formEmail" id="formEmail" placeholder=" E-mail"><br>
                             </div>
                             <div class="txtField">
-                                <input type="text" placeholder=" Assunto"><br>
+                                <input type="text" name="formAssunto" id="formAssunto" placeholder=" Assunto"><br>
                             </div>
                             <div class="txtField">
-                                <textarea name="" id=""  placeholder=" Mensagem" rows="10"></textarea><br>
+                                <textarea name="formMsg" id="formMsg"  placeholder=" Mensagem" rows="10"></textarea><br>
                                 <br>
                             </div>
                         </div>
                         <button style="background-color: #2062af;" type="submit" class="btn btn-app">Enviar</button>
-            
                 </form>
                 </div>
             </div>

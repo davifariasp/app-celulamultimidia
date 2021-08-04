@@ -1,21 +1,46 @@
 <%- contentFor('body') %>
 
-<% let cont=0; %>
 
-<% do {%>
-<form action="" id="questao">
-    <% for(let index; index<=questoes1.options.length;index++){%>
-        <p id="enunciado"><=%questoes1.title%></p>
-        <input type="radio" name="itens" id="item <=%index%>" value="<=%questoes1.options[index]%>">
-    <% }%>
-        <input type="button" name="incrementa" id="incrementa" value=""> 
-</form>
-<% }while(cont<=questoes1.length)%>
+<% let valueId=0; %>
+
+</div>
+<div class="jumbotron text-center">
+    <h1>Guia de Métodos</h1>
+    <div class="row">
+            <div class="col-sm-4">
+                <h2><%= questoes1[valueId].id_q%></h2>
+                <h1 id="titleq"><%= questoes1[valueId].title %></h1>           
+                <% for (let index= 0; index < questoes1[valueId].options.length ; index++){ %>
+                    <p id="enunciado"><%= JSON.stringify(questoes1[valueId].options[index].title)%></p>
+                    <input type="radio" name="itens" id="item <%= index%>" value="<%= JSON.stringify(questoes1[valueId].options[index].title) %>">
+                <% }%>           
+            </div>       
+    </div>
+    <div id="buttons-guia">
+        <input  type="button" name="proximo" id="proximo" value="Próximo">
+        <input type="button" name="voltar" id="voltar" value="Voltar">
+    </div>
+
+</div>
 
 <script type="text/javascript">
-    let inc=getElementById("click",("incrementa"));
-    inc.addEventListener((e)=>{
-        cont++;
-    e.preventDefault(); 
-    });
+    <% valueId=0; %>  
+
+    window.onload = function () {
+        let prox = document.getElementById("proximo");
+        let volt = document.getElementById("voltar");
+
+        prox.addEventListener("click",(event) => { 
+            <% valueId++; %>
+            console.log(<% valueId %>);
+            event.preventDefault();
+        });
+
+        volt.addEventListener("click",(event) => {
+            <% valueId--; %>
+            console.log(<% valueId %>);
+            event.preventDefault();
+        });
+    };
+
 </script>
