@@ -1,4 +1,4 @@
-# app-celulamultimidia
+# Aplicação para Célula Multimídia
 
 Equipe LSD:
 
@@ -16,4 +16,4 @@ Projeto que tem a finalidade de desenvolver uma aplicação web para exibir arti
 
 Modo de execução da aplicação:
 
-	Para a execução precisará ter o Node.js instalado na sua máquina. Tendo ciência disso, basta abrir O Node.js e executar o arquivo "server.js", após isso a sua aplicação estará funcionando na URL indicada no terminal.
+Para a execução precisará ter o Node.js instalado na sua máquina. Tendo ciência disso, basta abrir O Node.js e executar o arquivo "server.js", após isso a sua aplicação estará funcionando na URL indicada no terminal.
