@@ -1,12 +1,13 @@
 # app-celulamultimidia
 
 Equipe LSD:
- \nDaniel Amorim Bessa - 497515
- Davi Farias Pinheiro - 496352
- Larissa Muniz da Silva - 495078
- Livia Gabrielle Regis Pereira - 494474
- Sofia Sousa Aguiar - 496516
 
+	Daniel Amorim Bessa - 497515
+	Davi Farias Pinheiro - 496352
+	Larissa Muniz da Silva - 495078
+	Livia Gabrielle Regis Pereira - 494474
+	Sofia Sousa Aguiar - 496516
+	
 Cliente: Ticianne Darin
 
 Projeto: Célula Multimídia
