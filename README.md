@@ -1,7 +1,7 @@
 # app-celulamultimidia
 
 Equipe LSD:
- Daniel Amorim Bessa - 497515
+ \nDaniel Amorim Bessa - 497515
  Davi Farias Pinheiro - 496352
  Larissa Muniz da Silva - 495078
  Livia Gabrielle Regis Pereira - 494474
