@@ -1,31 +1,45 @@
-<%- contentFor('body') %>
+<%- contentFor('main') %>
 
-<div class="jumbotron text-center" id="faleconosco">
-    <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-                <h2>Entre em contato!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <form action="/contact" method="POST">
-                      <div class="form-group">
-                            <label>Nome</label>
-                            <input type="text" name="name" class="form-control">
-                      </div>
-                      <div class="form-group">
-                            <label>Email</label>
-                            <input type="text" name="email" class="form-control">
-                      </div>
-                      <div class="form-group">
-                            <label>Sua mensagem</label>
-                            <input type="text" name="message" class="form-control">
-                      </div>
-                      <div class="form-group text-right">
-                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                      </div>
-                </form>
-          </div>
+<div id="faleconosco-page">
+    <div id="faleconosco-box">
+        <div id="faleconosco-conteudo">
+            <div id="faleconosco-contato">
+                <h1 class="titulos" style="color: #2062af;">Dúvidas?
+                    <br>Quer fazer parte
+                    <br>do nosso time?
+                    <br>Mardar mimos?
+                </h1>
+                <h1 class="titulos" style="color: #0c9eaf;">Fala com a gente!</h1>
+                <div id="container-redessociais">
+                    <a href=""><img src="../images/insta.png" alt="Insta da Célula"></a>
+                    <a href=""><img src="../images/youtube.png" alt="Youtube da célula"></a>
+                    <a href=""><img src="../images/local.png" alt="Local da Célula"></a>
+                    <a href=""><img src="../images/facebook.png" alt="Facebook da Célula"></a>
+                </div>
+                <br>
+                <p>ticiane.monitoria@gmail.com</p>
+            </div>
+            <div id="formulario-contato">
+                    <div id="caixaContato">
+                        <form action="/enviaremail" method="POST">
+                        <div class="txtField">
+                            <input type="text" name="formNome" id="formNome" placeholder=" Nome" ><br>
+                        </div>
+                        <div class="txtField">
+                            <input type="email" name="formEmail" id="formEmail" placeholder=" E-mail"><br>
+                        </div>
+                        <div class="txtField">
+                            <input type="text" name="formAssunto" id="formAssunto" placeholder=" Assunto"><br>
+                        </div>
+                        <div class="txtField">
+                            <textarea name="formMsg" id="formMsg"  placeholder=" Mensagem" rows="10"></textarea><br>
+                            <br>
+                        </div>
+                    </div>
+                    <button style="background-color: #2062af;" type="submit" class="btn btn-app">Enviar</button>
+            </form>
+            </div>
+        </div>
     </div>
+</div>
+</div>

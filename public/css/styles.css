@@ -18,8 +18,13 @@
     --cor2:#0066CC;
     --cor3:#009FB0;
     --cor4:#FF9900;
-    --cor5:#545067;   
-    
+    --cor5:#545067;     
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 a{
@@ -55,136 +60,139 @@ a:focus{
     color: white;
 }
 
-
-#btn-guia{
-    margin-left: 50px;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Fira Sans', sans-serif;
-}
-
 body{
     background-color: #08909f;
     overflow-x: hidden;
 }
 
+main{
+    margin: 0 auto;
+}
 /* Estilo de navegação*/
+
 
 header{
     width: 100%;
-    position:-webkit-sticky;
-    position: sticky;  
-    top: 0px;
+    position: fixed;  
     background-color: white;
     box-shadow: 2px 5px 10px 5px rgb(0 0 0 / 15%);
-}
-
-#container-menu{
     top: 0px;
-    width: 1000px;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     
 }
 
-
-nav{
-    position: relative;
-    margin: 0px auto;
-    width: 825px;/*825*/
-    height: 50px;
-    background-color: none;
-    border-radius: 8px;
-    font-size: 0;
+#container-menu{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
 }
 
-nav > a{
-    padding-left: 50px; /*50*/
+#container-menu > a{
+    color: black;
+}
+
+#container-menu ul li{
     font-size: 17px;
     font-weight: var(--font-light);
-    text-decoration: none;
-    line-height: 50px;
-    position: relative;
-    z-index: 1;
     text-align: center;
+    float: left;
+}
+
+#container-menu ul ul{
+    display: none;
+    background-color: var(--cor1);  
+    box-shadow: 3px 12px 10px 0px rgb(0 0 0 / 15%);
+    border-radius: 0px 0px 20px 20px;  
+}
+
+#container-menu ul li:hover>ul{
+    display: grid;
+    position: relative;
+}
+
+#nav-menu{
+    display: block;
+    align-items: center;
+    margin: 0px auto;
+    height: 50px;
 }
 
 .nav-item{
-    color: #08909f
+    margin: 0 25px;
+}
+
+#nav-menu li{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+}
+
+.nav-submenu{
+    display: block;
+}
+
+.nav-item{
+    color: var(--cor3);
+}
+
+.subnav-item {
+    color: var(--cor4);
+}
+
+#btn-guia{
+    margin: 0 25px;
 }
 
 nav .animation{
+    visibility: hidden;
     position: absolute;
-    height: 5px;
+    height: 2px;
     bottom: 0;
-    z-index: 0;
+    z-index: 1;
     background-color: #08909f;
     width: 100px;
     border-radius: 8px;
     transition: all .5s ease 0s;
 }
 
-a:nth-child(1){
-    width: 100px;
-}
-
-a:nth-child(2){
-    width: 140px;
-}
-
-a:nth-child(3){
-    width: 100px;
-}
-
-
-a:nth-child(4){
-    width: 160px;
-}
 
     /*Animação em hover*/
-    nav .start-inicio,a:nth-child(1):hover~.animation{
-        width: 140px;
-        left: 0;
+    nav > a:nth-child(1):hover~.animation{
+        visibility: visible;
+        width: 50px;
     }
 
-    nav .start-trabalhos,a:nth-child(2):hover~.animation{
-        width: 241px;
-        left: 89px;
-    }
-
-    nav .start-conheca,a:nth-child(3):hover~.animation{
-        width: 232px;
+    nav > a:nth-child(2):hover~.animation{
+        visibility: visible;
+        width: 50px;
         left: 278px;
     }
 
-    nav .start-fale,a:nth-child(4):hover~.animation{
-        width: 200px;
+    nav > a:nth-child(3):hover~.animation{
+        visibility: visible;
+        width: 50px;
         left: 459px;
     }
 
     /*Animação em focus*/
-    nav .start-inicio,a:nth-child(1):focus~.animation{
-        width: 140px;
-        left: 0;
-    }
-
-    nav .start-trabalhos,a:nth-child(2):focus~.animation{
-        width: 241px;
+    nav > a:nth-child(1):focus~.animation{
+        visibility: visible;
+        width: 50px;
         left: 89px;
     }
 
-    nav .start-conheca,a:nth-child(3):focus~.animation{
-        width: 232px;
+    nav > a:nth-child(2):focus~.animation{
+        visibility: visible;
+        width: 50px;
         left: 278px;
     }
 
-    nav .start-fale,a:nth-child(4):focus~.animation{
-        width: 200px;
+    nav > a:nth-child(3):focus~.animation{
+        visibility: visible;
+        width: 50px;
         left: 459px;
     }
 
@@ -197,36 +205,49 @@ a:nth-child(4){
     width: 100vw;
 }
 
-/*Configurando página incial*/
-.titulos{
-    font-weight: bold;
-    font-size: 35px;
-    
+.sessao{
+    width: 100vw;
+    height: 100vh;
 }
+
+/*Configurando titulos, descrições e traços*/
+.titulos{
+    margin: 0;
+    font-weight: bold;
+    font-size: 35px; 
+}
+
+.descricao{
+    margin: 0;
+    font-weight: normal;
+    font-size: 20px;
+}
+
 .traco1{
+    margin: 10px 0px;
     border: none;
     background-color: var(--cor1);
     width: 60px;
     height: 6px;
-    margin-bottom: 0px;
-}
-.traco2{
-    margin-left: 0px;
-    border: none;
-    background-color: var(--cor2);
-    width: 60px;
-    height: 6px;
-    margin-bottom: 0px;
-}
-.traco3{
-    margin-left: 0px;
-    border: none;
-    background-color: var(--cor2);
-    width: 60px;
-    height: 6px;
-    margin-bottom: 0px;
 
 }
+.traco2{
+    margin: 10px 0px;
+    border: none;
+    background-color: var(--cor2);
+    width: 60px;
+    height: 6px;
+}
+
+.traco3{
+    margin: 10px 0px;
+    border: none;
+    background-color: var(--cor4);
+    width: 60px;
+    height: 6px;
+}
+
+/*Configurando página incial*/
 
 .tipo-trabalho{
     font-weight: bold;
@@ -245,8 +266,7 @@ a:nth-child(4){
     margin-top: 15vh;
     width: 860px;
     margin-left: auto;
-    margin-right: auto;
-   
+    margin-right: auto;   
 }
 
 #inicio-conteudobox{
@@ -400,6 +420,14 @@ a:nth-child(4){
 }
 
 /*Configurando o fale conosco*/
+#faleconosco-page{
+    height: 92.4vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center; 
+}
+
 #faleconosco{
     height: 88vh;
     background-color: white;
@@ -407,11 +435,11 @@ a:nth-child(4){
     align-items: center; 
 }
 
+
 #faleconosco-box{ 
     margin-left: auto;
     margin-right: auto;
     width: 860px;
-    
 }
 
 #faleconosco-conteudo{
@@ -485,4 +513,123 @@ fieldset{
 /*Configurando botões na página do guia*/
 #buttons-guia{
     padding-top: 20px;
+}
+
+/*Configurando as páginas de dentro da aplicação*/
+.pages{
+    width: 100vw;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.pages-conteudo{
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--cor1);
+}
+
+
+.header-img{
+    width: 100vw;
+    height: 100%;   
+}
+
+.trabalhos-header{
+    background-color: var(--cor3);
+}
+
+#traco-produtos{
+    margin: 10px 0px;
+    border: none;
+    background-color: var(--cor4);
+    width: 150px;
+    height: 6px;
+}
+
+
+.pages-conteudo h1{
+    color: var(--cor1);
+}
+
+.pages-conteudo p{
+    color: var(--cor1);
+}
+
+
+.trabalhos-desc{
+    position: grid;
+    height: 150px;
+    padding: 20px 25px;
+    background-color: #007E8C;
+
+}
+
+#produtos-info{
+    margin: 100px 0;
+    text-align: center;
+}
+
+#produtos-info h1{
+    color: var(--cor5);
+}
+
+#produtos-info p{
+    color: var(--cor5);
+}
+
+#icons-produtos ul{
+    display: inline-flex;
+    align-items: center;
+}
+
+#icons-produtos ul li{
+    display: block;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.produtos-render{
+    display: grid;
+    width: 1080px;
+    padding: 40px 80px;
+}
+
+.produtos-render > h1,p{
+    color: var(--cor5);
+}
+
+.render-titulo{
+    margin-top:200px;
+}
+
+#produtos-card{
+    display: inline-flex;
+    align-items: center;
+    width: 1080px;
+    height: 400px;
+    margin: 30 auto;
+    padding: 40px 80px;
+    background-color: #F2F6FA;
+    border-radius: 20px;
+    box-shadow: 3px 12px 10px 0px rgb(0 0 0 / 8%);
+}
+
+#produtos-tag{
+    margin-right: 60px;
+}
+#produtos-texto{
+    display: block;
+}
+
+#produtos-texto > h1{
+    color: var(--cor5);
+}
+
+#produtos-texto > p{
+    color: var(--cor5);
+}
+
+.icon-mais{
+    padding-left: 8px;
 }

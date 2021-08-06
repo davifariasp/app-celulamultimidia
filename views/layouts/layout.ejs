@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Célula Multimídia</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+  <% if(idPage == 'home'){%>
+
+    <%- include('../partials/menuHome.ejs')%>
+
+    <% } else { %>
+
+      <%- include('../partials/menuPages.ejs')%>
+
+    <%}%>
+  
+   <main>
+     <div class="container">
+      <%- main %>
+     </div>
+   </main>
+  <footer>
+  </footer>
+  <!--jQuery-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!--Meus scripts-->
+  <script type="text/javascript" src="/js/animation-menu.js"></script>
+</body>
+</html>  
+
