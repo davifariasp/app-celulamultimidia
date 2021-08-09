@@ -53,12 +53,18 @@ app.listen(port, () => {
                     },
                     {
                     ano: 2019,
-                    produtos: {
+                    produtos: [{
                         tag: tagUx,
                         title: "Experiência do Usuário em Jogos Digitais: Uma Catalogação de Instrumentos de Avaliação",
                         autores:"Bosco Borges; Izac Sidarta; Antonio Marcos de Souza; Bianca Coelho; Ticianne Darin",
                         descricao:"Esta pesquisa visa prover um catálogo de instrumentos de avaliação de UX em jogos, reunindo informações para orientar a seleção desses instrumentos no planejamento da avaliação de experiência do jogador.",
-                        link:"http://google.com.br" }           
+                        link:"https://www.youtube.com/watch?v=ABnf5H3ww4M&ab_channel=BujidoCavacoChannel" },
+                        {
+                        tag: tagUx,
+                        title: "Experiência do Usuário em Jogos Digitais: Uma Catalogação de Instrumentos de Avaliação",
+                        autores:"Bosco Borges; Izac Sidarta; Antonio Marcos de Souza; Bianca Coelho; Ticianne Darin",
+                        descricao:"Esta pesquisa visa prover um catálogo de instrumentos de avaliação de UX em jogos, reunindo informações para orientar a seleção desses instrumentos no planejamento da avaliação de experiência do jogador.",
+                        link:"https://www.youtube.com/watch?v=jmePZFX8nPw&t=1709s&ab_channel=MartinsCds" }]           
                     }];
  
                 res.render('pages/produtos', {

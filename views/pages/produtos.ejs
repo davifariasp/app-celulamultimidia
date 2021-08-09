@@ -42,26 +42,36 @@
             </div>
             
             <div class="produtos-render">
-                <% for(let index= 0; index < cardProdutos.length ; index++) { %>
-            
-                    <h1 class="render-titulo"><%= cardProdutos[index].ano %><img class="icon-mais" src="../images/icones/seta-mais-produtos.png" alt=""></h1>
+                <% for(let index=0; index < cardProdutos.length ; index++) { %>
 
-                    <div id="produtos-card">
-                        <div id="produtos-tag">
-                            <img src="<%= cardProdutos[index].produtos.tag %>" alt="">
-                        </div>
-                        <div id="produtos-texto">
-                            <h1><%= cardProdutos[index].produtos.title%></h1>
-                            <p><%= cardProdutos[index].produtos.autores%></p>
-                            <p><%= cardProdutos[index].produtos.descricao%></p>
-
-                            <a href="<%= cardProdutos[index].produtos.link %>">Leia mais <img class="icon-mais" src="../images/icones/seta-leia-mais-produtos.png" alt=""></a>
-                        </div>
+                <h1 class="render-titulo"><%= cardProdutos[index].ano %><img class="icon-mais" src="../images/icones/seta-mais-produtos.png" alt=""></h1>
+                
+                <% var indexP=0 %>
+                <% do {%>
+                <div id="produtos-card">
+                    
+                    <div id="produtos-tag">
+                        <img src="<%= cardProdutos[index].produtos.tag %>" alt="">
                     </div>
+                    <div id="produtos-texto">
+                        <h1><%= index;%></h1>
+                        <h1><%= indexP ;%></h1>
+                        <h1><%= cardProdutos[index].produtos.title%></h1>
+                        <p><%= cardProdutos[index].produtos.autores%></p>
+                        <p><%= cardProdutos[index].produtos.descricao%></p>
+                        <a href="<%= cardProdutos[index].produtos.link %>">Leia mais <img class="icon-mais" src="../images/icones/seta-leia-mais-produtos.png" alt=""></a>
+                        <br>
+                    </div>
+                    
+                </div>
+                <%indexP++%>
+                <% } while ( indexP < cardProdutos[index].produtos.length);%>
                 <% } %>
+
             </div>
 
         </div>
 
     </div>
 </div>
+
