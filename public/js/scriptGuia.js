@@ -478,11 +478,11 @@ function setarPosicaoArvore(p){
 }
 
 function encerrar(b){
-    // console.log(typeof b.target.dataset.metodo)
-    recomendar(b.target.dataset.metodos)
-    var recomendacao;
+    console.log(typeof b.target.dataset.metodos)
+    recomendar(b.target.dataset.metodo,metodos)
+    var recomendacao
     alert(`O método mais indicado é:  ${b.target.dataset.metodo} ${recomendacao}`)
-    // console.log(recomendacao)
+     console.log(recomendacao)
 }
 
 function resetState(string){
