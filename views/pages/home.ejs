@@ -79,31 +79,23 @@
                 </div>
                 <div id="formulario-contato">
                         <div id="caixaContato">
-                            <form action="/enviaremail" method="POST">
-                            <div class="txtField">
-                                <input type="text" name="formNome" id="formNome" placeholder=" Nome" ><br>
-                            </div>
-                            <div class="txtField">
-                                <input type="email" name="formEmail" id="formEmail" placeholder=" E-mail"><br>
-                            </div>
-                            <div class="txtField">
-                                <select name="formAssunto" id="formAssunto">
+                            <form action="https://api.staticforms.xyz/submit" method="POST">
+                                <input type="hidden" name="accessKey" value="12ac3471-7613-4c34-bd1c-c63aa2b0909a">
+
+                                <input type="text" name="name" placeholder=" Nome">
+                                <input type="text" name="email" placeholder=" E-mail">
+                                <select name="subject" name="formAssunto" id="formAssunto">
                                     <option value="none">Assunto</option>
                                     <option value="duvidas">Dúvidas</option>
                                     <option value="pedido">Pedido de Materiais</option>
                                     <option value="proejtos_colab">Projetos e Colaboração</option>
                                     <option value="outros">Outros</option>
-                                 </select>
+                                </select>
+                                <textarea name="message" id="formMsg"  placeholder=" Mensagem" rows="10"></textarea><br>
 
-                                <input type="text" name="formAssunto" id="formAssunto" placeholder=" Assunto"><br>
-                            </div>
-                            <div class="txtField">
-                                <textarea name="formMsg" id="formMsg"  placeholder=" Mensagem" rows="10"></textarea><br>
-                                <br>
-                            </div>
-                        </div>
-                        <button style="background-color: #2062af;" type="submit" class="btn btn-app">Enviar</button>
-                </form>
+                                <input style="background-color: #2062af;" type="submit" class="btn btn-app" value="Enviar">
+                            </form>
+                     </div>
                 </div>
             </div>
         </div>

@@ -120,10 +120,31 @@ app.listen(port, () => {
             })
         });
 
-    //post /contact
-    app.post('/enviaremail', (req, res) => {
-        res.send('Obrigado por entrar em contato conosco, ' + req.body.formNome + '! Responderemos em breve!');
-    })
+    // NÃO UTILIZADO MAIS
+    // app.post('/enviaremail', (req, res) => {
+    
+
+    // /*Variaveis vindas através do form
+
+    // req.body.formNome
+    // req.body.formEmail
+    // req.body.formAssunto
+    // req.body.formMsg*/
+
+    // //Enviando o email
+    // transporter.sendMail({
+    //     from: "Davi <davi.informatica8@gmail.com>",
+    //     to: req.body.formEmail,
+    //     subject: req.body.formAssunto,
+    //     text: req.body.formMsg
+    // }).then(message => {
+    //     console.log(message)
+    // }).catch(err => {
+    //     console.log(err)
+    // })
+
+    // res.redirect('/')
+    // })
 
     app.get('/guiateste', (req, res) => {
         
