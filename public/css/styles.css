@@ -730,11 +730,10 @@ fieldset{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 800px;
     padding: 20px;
-    background-color: white;
+    /* background-color: white;
     border-radius: 5px;
-    box-shadow: 0 0 10px 2px;
+    box-shadow: 0 0 10px 2px; */
 }
 
 .button-grid{
