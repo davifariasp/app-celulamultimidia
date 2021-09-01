@@ -690,6 +690,8 @@ fieldset{
 }
 
 #introducao-guia{
+    margin-top: 50px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -779,4 +781,16 @@ fieldset{
 
 .hide{
     display: none;
+}
+
+/*Páginas em contrução*/
+.pagina-building{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 100px;
+    padding: 20px;
 }

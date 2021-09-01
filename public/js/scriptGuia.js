@@ -301,6 +301,7 @@ function mostrarPergunta(pergunta){
     questionElement.innerText = pergunta.conteudo
     displayRespostas(pergunta.childs[0])
 }
+
 function displayRespostas(childsPergunta){
     childsPergunta.forEach((respAtual, indice)=>{
         // console.log(respAtual)
