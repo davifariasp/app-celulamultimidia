@@ -18,7 +18,12 @@
     --cor2:#0066CC;
     --cor3:#009FB0;
     --cor4:#FF9900;
-    --cor5:#545067;     
+    --cor5:#545067;  
+    
+    /*-- botoes cor guia --*/
+    --hue-neutral: 200;
+    --hue-correct: 145;
+    --hue-wrong: 0;
 }
 
 *{
@@ -675,5 +680,103 @@ fieldset{
 }
 
 .container-ano2019{
+    display: none;
+}
+
+/*Introdução guia*/
+#guiastart{
+    background-color: var(--cor1);
+    height: 100vh;
+}
+
+#introducao-guia{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#traco-verde{
+    margin: 10px 0px;
+    border: none;
+    background-color: var(--cor3);
+    width: 50px;
+    height: 6px;
+}
+
+.texto-verde{
+    color: var(--cor3);;
+}
+
+
+#texto-introducao{
+    color: var(--cor1);
+    background-color: var(--cor3);
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+
+/*CSS do guia*/
+
+.guiastart-box{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.button-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* repetir com todas as colunas: colunas de 2 elementos preenchendo todo o espaço possivel(auto) */
+    gap: 10px; /* define o espaço entre elementos da grid */
+    margin: 20px 0px 20px 0px;
+}
+
+.btn{
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 20%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover{
+    border-color: black;
+}
+
+.btn-correct{
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn-wrong{
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+}
+
+.controls-guia{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
     display: none;
 }
