@@ -39,6 +39,7 @@ div.container{
 a:hover{
     opacity: 0.8;
     text-decoration: none;
+    
 }
 
 
@@ -77,17 +78,14 @@ header{
     background-color: white;
     box-shadow: 2px 5px 10px 5px rgb(0 0 0 / 15%);
     top: 0px;
-    
+    z-index: 1;
 }
 
 #container-menu{
-    position: sticky;
-    position: -webkit-sticky;
     top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;
 }
 
 #container-menu > a{
@@ -254,6 +252,12 @@ nav .animation{
     font-size: 22px;
 }
 
+.texto-home{
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+}
+
 #inicio{
     height: 88vh;
     color: white;
@@ -263,14 +267,24 @@ nav .animation{
 }
 
 #inicio-conteudo{
-    margin-top: 15vh;
+    margin-top: 80px;
     width: 860px;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;  
 }
 
-#inicio-conteudobox{
-    width: 380px;
+#inicio-box{
+    display: flex;
+    align-items: center;
+}
+
+.titulosBranco{
+    color: var(--cor1);
+}
+
+#text-inicio{
+    margin-left: 20px;
+    color: var(--cor1);
 }
 
 #inicio-conteudo p{
@@ -280,6 +294,7 @@ nav .animation{
     margin-bottom: 50px;
     margin-right: 50px;
 }
+
 #acesse-guia{
     padding: 15px 25px;
     font-size: 18px;
@@ -493,6 +508,16 @@ nav .animation{
     border-radius: 20px;
     
 }
+
+#formAssunto{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
 .txtField{
     padding: 2px;
 }
@@ -516,6 +541,7 @@ fieldset{
 }
 
 /*Configurando as páginas de dentro da aplicação*/
+
 .pages{
     width: 100vw;
     margin: 0 auto;
@@ -523,16 +549,14 @@ fieldset{
 }
 
 .pages-conteudo{
-    display: grid;
-    align-items: center;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
     background-color: var(--cor1);
 }
 
-
 .header-img{
-    width: 100vw;
-    height: 100%;   
+    width: 100vw;  
 }
 
 .trabalhos-header{
@@ -548,7 +572,7 @@ fieldset{
 }
 
 
-.pages-conteudo h1{
+.tituloTrabalhos{
     color: var(--cor1);
 }
 
@@ -558,11 +582,9 @@ fieldset{
 
 
 .trabalhos-desc{
-    position: grid;
     height: 150px;
-    padding: 20px 25px;
+    padding: 20px 50px;
     background-color: #007E8C;
-
 }
 
 #produtos-info{
@@ -590,17 +612,22 @@ fieldset{
 }
 
 .produtos-render{
+    color: var(--cor5);
     display: grid;
     width: 1080px;
-    padding: 40px 80px;
+    margin: 0 auto;
 }
 
-.produtos-render > h1,p{
+.render-titulo{
+    color: var(--cor5);
+}
+
+.produtos-texto{
     color: var(--cor5);
 }
 
 
-#produtos-card{
+.produtos-card{
     display: inline-flex;
     align-items: center;
     width: 1080px;
@@ -629,4 +656,24 @@ fieldset{
 
 .icon-mais{
     padding-left: 8px;
+}
+
+.btn-ano{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent url("../images/icones/seta-mais-produtos.png") left center no-repeat;
+}
+
+
+.btn-ano:hover{
+    opacity: 0.8;
+}
+
+.container-ano2020{
+    display: none;
+}
+
+.container-ano2019{
+    display: none;
 }

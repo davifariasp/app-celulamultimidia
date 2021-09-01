@@ -3,11 +3,15 @@
 <div id="sessoes">
     <div id="inicio">
         <div id="inicio-conteudo">
-            <div id="inicio-conteudobox">
-                <h1 class="titulos">Saiba quais métodos de avaliação você pode usar nos seus projetos</h1>
-                <hr class="traco1">
-                <div class="divisor"> </div>
-                <p class="descricao">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut  laoreet dolore magna aliquam erat volutpat.</p>
+            <div id="inicio-box">
+                <div id="inicio-conteudo">
+                    <h1 class="titulos">Saiba quais métodos de avaliação você pode usar nos seus projetos</h1>
+                    <hr class="traco1">
+                    <div class="divisor"> </div>
+                    <p class="texto-home">O nosso Guia de Métodos é baseado nas diretrizes de IHC e vai ajudar você a descobrir quais os métodos mais adequados de avaliação para seu projeto.</p>
+                </div>
+                
+                <img src="../images/ilustracoes/ilustra-home.png" alt="Ilustração do Guia">
             </div>
             <a class="btn-app" id="acesse-guia" href="/guia">ACESSE O GUIA DE MÉTODOS</a>
                      
@@ -20,32 +24,20 @@
             <hr class="traco2">
 
             <div id="trabalhos-cards">
-                <a href="/nossostrabalhos/artigos" id="bloco1">
+                <a id="bloco1" href="/nossostrabalhos/artigos" id="bloco1">
                         <img src="../images/artigos.png" alt="">
                         <h2 class="tipo-trabalho">Artigos</h1>
-                        <p>Lorem ipsum dolor sit amet,
-                        consectetuer adipiscing elit,
-                        sed diam nonummy nibh euis
-                        mod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat.</p>
+                        <p>Procurando uma leitura massa? Confira as pesquisas produzidas pela Célula nas áreas de IHC, experiência do jogador, avaliação de UX e muito mais!</p>
                 </a>
-                <a href="/nossostrabalhos/artigos" id="bloco2">
+                <a href="/nossostrabalhos/produtos" id="bloco2">
                         <img src="../images/produtos.png" alt="">
                         <h2 class="tipo-trabalho">Produtos</h1>
-                        <p>Lorem ipsum dolor sit amet,
-                        consectetuer adipiscing elit,
-                        sed diam nonummy nibh euis
-                        mod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat.</p>
+                        <p>Projetos desenvolvidos por alunos dentro da Célula que geraram produtos inovadores como aplicativos, guias, jogos digitais e muitos outros.</p>
                 </a>
-                <a href="/nossostrabalhos/artigos" id="bloco3">
+                <a href="/nossostrabalhos/projetos" id="bloco3">
                     <img src="../images/projetoss.png" alt="">
                     <h2 class="tipo-trabalho">Projetos</h1>
-                    <p>Lorem ipsum dolor sit amet,
-                    consectetuer adipiscing elit,
-                    sed diam nonummy nibh euis
-                    mod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat.</p>
+                    <p>Fique por dentro de todos os nossos projetos realizados dentro do PIBITI, PIBIC, Núcleo de Extensão e Formação.</p>
                 </a>
             </div>
         </div>
@@ -57,7 +49,7 @@
                 <hr class="traco2">
                 <div class="container-celulatexto">
                     <img src="../images/fotos-celula.png" alt="Foto com os participantes da Célula Multimídia">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+                    <p>Aqui desenvolvemos pesquisas na área de Interação Humano-Computador, Design de Interação e Interfaces e UX. Contamos com um núcleo de monitoria, iniciação de pesquisa científica e à docência. Quer saber como isso tudo começou? Vem aqui que vou te contar! Era uma vez...
                     <br><br><br><a class="btn-app" id="btn-historia" href="/acelula">CONHEÇA A CÉLULA</a></p>
                     
                 
@@ -95,6 +87,14 @@
                                 <input type="email" name="formEmail" id="formEmail" placeholder=" E-mail"><br>
                             </div>
                             <div class="txtField">
+                                <select name="formAssunto" id="formAssunto">
+                                    <option value="none">Assunto</option>
+                                    <option value="duvidas">Dúvidas</option>
+                                    <option value="pedido">Pedido de Materiais</option>
+                                    <option value="proejtos_colab">Projetos e Colaboração</option>
+                                    <option value="outros">Outros</option>
+                                 </select>
+
                                 <input type="text" name="formAssunto" id="formAssunto" placeholder=" Assunto"><br>
                             </div>
                             <div class="txtField">
