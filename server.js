@@ -57,7 +57,7 @@ app.listen(port, () => {
                         title: " GAPI: Um guia online para apoio ao ensino de métodos de pesquisa com usuários ",
                         autores:"Izac Sidarta; Ticianne Darin",
                         descricao:"O artigo apresenta desenvolvimento do primeiro módulo de um guia online para alunos cuja finalidade é aprofundamento e estudo destes métodos de pesquisa em IHC",
-                        link:"http://google.com.br"}]         
+                        link:"#"}]         
                     },
                     {
                     ano: 2019,
@@ -66,19 +66,19 @@ app.listen(port, () => {
                         title: "Experiência do Usuário em Jogos Digitais: Uma Catalogação de Instrumentos de Avaliação",
                         autores:"Bosco Borges; Izac Sidarta; Antonio Marcos de Souza; Bianca Coelho; Ticianne Darin",
                         descricao:"Esta pesquisa visa prover um catálogo de instrumentos de avaliação de UX em jogos, reunindo informações para orientar a seleção desses instrumentos no planejamento da avaliação de experiência do jogador.",
-                        link:"https://www.youtube.com/watch?v=ABnf5H3ww4M&ab_channel=BujidoCavacoChannel" },
+                        link:"#" },
                         {
                         tag: tagIhcCatalogo,
                         title: "Which Instrument Should I Use? Supporting Decision-Making About the Evaluation of User Experience",
                         autores:"Bianca Coelho; Ticianne Darin; Bosco Borges",
                         descricao:"We compiled information about 116 instruments aiming to assist researchers and practitioners in making informed choices about which instruments can support UX data collection, according to their research goals. In addition to that.",
-                        link:"https://www.youtube.com/watch?v=jmePZFX8nPw&t=1709s&ab_channel=MartinsCds" },
+                        link:"#" },
                         {
                         tag: tagAppJogos,
                         title: "Clube do Resgate: Um jogo digital baseado em localização para a conscientização contra o abandono de animais conscientização contra o abandono de animais",
                         autores:"Mateus Pinheiro; Espedito Mesquita; Izac Sidarta; David Miranda; Patrick de Araújo",
                         descricao:"Hoje, o ato de abandonar animais domésticos na rua, além de agravar o problema, configura crime federal, mas mesmo tal medida não impede que essa prática ocorra por todo o território nacional. ",
-                        link:"https://www.youtube.com/watch?v=jmePZFX8nPw&t=1709s&ab_channel=MartinsCds" },
+                        link:"#" },
                     
                     
                     
