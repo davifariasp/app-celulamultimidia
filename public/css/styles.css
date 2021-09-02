@@ -686,7 +686,6 @@ fieldset{
 /*Introdução guia*/
 #guiastart{
     background-color: var(--cor1);
-    height: 100vh;
 }
 
 #introducao-guia{
@@ -736,28 +735,41 @@ fieldset{
     box-shadow: 0 0 10px 2px; */
 }
 
+.containerQ{
+    width: 715px;
+    height: 452px;
+    max-height: 900px;
+    background-color: transparent;
+    
+    /* border-radius: 5px; */
+    /* padding: 10px; */
+    /* box-shadow: 0 0 10px 2px; */
+}
+
 .button-grid{
     display: grid;
-    grid-template-columns: repeat(2, auto); /* repetir com todas as colunas: colunas de 2 elementos preenchendo todo o espaço possivel(auto) */
-    gap: 10px; /* define o espaço entre elementos da grid */
+    grid-template-columns: repeat(1, auto); /* repetir com todas as colunas: colunas de 2 elementos preenchendo todo o espaço possivel(auto) */
+    gap: 15px; /* define o espaço entre elementos da grid */
     margin: 20px 0px 20px 0px;
 }
 
-.btn{
+.btnQ{
     --hue: var(--hue-neutral);
-    border: 1px solid hsl(var(--hue), 100%, 20%);
-    background-color: hsl(var(--hue), 100%, 50%);
+    background-color: white;
     border-radius: 5px;
-    padding: 5px 10px 5px 10px;
-    color: white;
+    padding: 0px 5px 0px ;
+    color: #0d92a1;
     outline: none;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    cursor:pointer;
 }
-
-.btn:hover{
+.btnQ:hover{
     border-color: black;
 }
 
-.btn-correct{
+.btnQ-correct{
     --hue: var(--hue-correct);
     color: black;
 }
@@ -766,13 +778,22 @@ fieldset{
     --hue: var(--hue-wrong);
 }
 
-.start-btn, .next-btn{
-    font-size: 1.5rem;
+.start-btnQ, .next-btnQ{
+    font-size: 18px;
     font-weight: bold;
-    padding: 10px 20px 10px 20px;
+    /* margin-top: 200px; */
+    padding: 15px 25px 15px 25px;
+    margin: 15px 25px 15px 25px;
+    background-color: #0066cc;
+    border-radius: 20px;
+    color: whitesmoke;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
 }
 
-.controls-guia{
+.controls{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -780,6 +801,64 @@ fieldset{
 
 .hide{
     display: none;
+}
+
+#question{
+    font-size: 22px;
+    color: #4d4d4d;
+    font-weight: bold;
+    margin: 20px 10px 10px 10px;
+}
+
+#btnQ-container{
+    margin-top: 0px;
+    display: flex;
+}
+
+#box-quest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#question-container{
+    margin: 0px;
+    padding: 10px;
+    width: 700px;
+
+} 
+
+
+.pergunta{
+    background-image: url('../images/icones/card-Pergunta.png');
+    display: flex; justify-content: center;
+    background-repeat:no-repeat;
+}
+
+.sugestao{
+    background-image: url('../images/icones/card-sugestao.png');
+    display: flex; justify-content: center;
+    background-repeat:no-repeat;
+}
+
+.sugestao-body{
+    font-size: 20px;
+    color: #4d4d4d;
+}
+
+#header-sugestao{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.header{
+    font-size: 35px;
+    font-weight: bold;
+    color: #4d4d4d;
 }
 
 /*Páginas em contrução*/

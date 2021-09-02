@@ -13,14 +13,28 @@
         </div>
     </div>
     <div class="guiastart-box">
-        <div id="question-guia" class="hide">
-            <div id="question"></div>
-            <div id="answer-buttons" class="button-grid">
+        <div class="containerQ pergunta">
+            <div id="box-quest">
+                <div id="question-container" class="hide">
+                    <div id='header-sugestao' class='hide'>Sugestão</div>
+                    <div id='question-header' style="display: flex;">
+                    <img id='question-icon' src='../images/icones/icon-1.png' height='70px' width="70px">
+                    <div id="question"></div>
+                </div>
+                <!-- <hr> -->
+                    <div class='hide sugestao-body'>a</div>
+                    <div id="answer-buttons" class="button-grid">
+                    </div>
+                    <div id='botoes-sugestao' class='hide'>
+                        <div style='display:flex; justify-content: center; align-items: center;'>
+                            <button class='start-btnQ'>SAIBA MAIS</button><a href="/guiastart"><img src='../images/icones/icon-restart.png' height='50px' width='50px'></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="start-btnQ" class="start-btnQ btnQ">COMEÇAR O GUIA</button>
+                </div>
             </div>
-        </div>
-        <div class="controls-guia">
-            <button id="start-btn" class="start-btn btn">Começar o guia!</button>
-            <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
     </div>
 </div>
